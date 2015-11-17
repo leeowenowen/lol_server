@@ -26,3 +26,11 @@
 *.exe
 *.out
 *.app
+
+out/
+*.swp
+*.swo
+*.mk
+*Makefile*
+third_party/boost_1_59_0/
+third_party/boost_1_59_0.7z
