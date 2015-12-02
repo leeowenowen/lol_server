@@ -1,4 +1,7 @@
 {
+    'variables': {
+      'boost_home':'/home/wangli/env/boost_1_59_0',
+    },
     'includes':[
       'common.gypi',
     ],
@@ -10,17 +13,18 @@
           '../src/main.cpp',
         ],
         'include_dirs': [
-          '../third_party/boost_1_59_0',
+          '<(boost_home)',
         ],
         'library_dirs': [
-            '../third_party/boost_1_59_0/stage/lib',
+            '<(boost_home)/stage/lib',
         ],
         'link_settings': {
           'library_dirs': [
-              '../third_party/boost_1_59_0/stage/lib',
+              '<(boost_home)/stage/lib',
           ],
           'libraries': [
               '-lboost_system',
+              '-lfcgi',
           ]
         },
       },
